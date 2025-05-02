@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K Madhan Kumar - UI Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #fdfcfb 0%, #e2d1c3 100%);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header {
+      text-align: center;
+      background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+      border-bottom: 5px solid #ffb347;
+      border-radius: 0 0 10px 10px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+      animation: popUp 1s ease-in-out;
+    }
+    @keyframes popUp {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #f7f7f7;
+    }
+    nav {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #6a11cb;
+      font-weight: 600;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #6a11cb;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      border-left: 5px solid #fc5c7d;
+      padding-left: 10px;
+      color: #d63384;
+    }
+    .project {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project h3 {
+      color: #ff4081;
+      margin-bottom: 10px;
+    }
+    .project p {
+      line-height: 1.7;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 20px;
+      background: #ffe0f0;
+    }
+    a {
+      color: #e91e63;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm K Madhan Kumar</h1>
+    <p>Aspiring UI Designer passionate about intuitive and elegant digital experiences.</p>
+    <nav id="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a B.Tech in Computer Science. I love turning complex ideas into clean, beautiful interfaces. I specialize in Figma,Canva,and HTML/CSS,Javascriptfor prototyping and front-end handoff.</p>
+    <p><strong>Skills:</strong> Figma,HTML,Canva, CSS, JavaScript , UX Principles, Wireframing, Prototyping</p>
+    <p><a href="https://drive.google.com/file/d/1WEU5if-US8s5Y3he5-p97sxIx8bXYvF4/view?usp=sharing" target="_blank">Download Resume</a></p>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+      <h3>Designed UI for Sports Tournament Statistics App</h3>
+      <p><strong>Tools:</strong> Figma &nbsp; <strong>Duration:</strong> Feb 2024 – Mar 2024</p>
+      <p>Designed UI for app focusing on accessibility and clean navigation. Created wireframes, high-fidelity UI, and prototyped user flows.</p>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p><strong>Tools:</strong> HTML, CSS,JavaScript, Figma &nbsp; <strong>Ongoing</strong></p>
+      <p>Built this responsive portfolio to showcase my UI design work and web development skills.</p>
+    </div>
+
+    <div class="project">
+      <h3>Hostel Management Website Design for College Project </h3>
+      <p><strong>Tools:</strong> Figma &nbsp; <strong>Duration:</strong> Nov 2024</p>
+      <p>Developed a reusable component library and UI guide for college Hostel Management Module website  emphasizing accessibility and consistency.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to discuss design, internships, or collaboration opportunities.</p>
+    <p>Email: <a href="mailto:kmadhankumar07@gmail.com">kmadhankumar07@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/k-madhan-kumar" target="_blank">linkedin.com/in/k-madhan-kumar}</a></p>
+    <p>GitHub: <a href="https://github.com/madhan123-p" target="_blank">github.com/madhan123-p</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Madhan Kumar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.getElementById("navbar");
+      const toggleBtn = document.createElement("button");
+      toggleBtn.textContent = "☰";
+      toggleBtn.style.display = "none";
+      toggleBtn.style.margin = "20px auto";
+      toggleBtn.style.fontSize = "1.5rem";
+      toggleBtn.style.background = "#6a11cb";
+      toggleBtn.style.color = "white";
+      toggleBtn.style.border = "none";
+      toggleBtn.style.padding = "10px 15px";
+      toggleBtn.style.borderRadius = "6px";
+      toggleBtn.style.cursor = "pointer";
+
+      document.querySelector("header").insertBefore(toggleBtn, nav);
+
+      function updateNav() {
+        if (window.innerWidth <= 768) {
+          nav.style.display = "none";
+          toggleBtn.style.display = "block";
+        } else {
+          nav.style.display = "flex";
+          toggleBtn.style.display = "none";
+        }
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        nav.style.flexDirection = "column";
+        nav.style.alignItems = "center";
+        nav.style.gap = "10px";
+        nav.style.animation = "fadeIn 0.5s ease";
+      });
+
+      window.addEventListener("resize", updateNav);
+      updateNav();
+    });
+  </script>
+</body>
+</html>
